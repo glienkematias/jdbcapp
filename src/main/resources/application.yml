@@ -1,0 +1,18 @@
+
+server:
+  port: 9090
+
+spring:
+  application:
+    name: jdbc-example
+
+datasources:
+  customs:
+    query-timeout: 20
+  my-connection:
+    jdbc-url: jdbc:postgresql://localhost:5432/book_store
+    username: walrus
+    password: walrus
+    maximum-pool-size: 10
+    pool-name: "crud-pool"
+    auto-commit: true
